@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato%3Awght%40300%3B400%3B700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <header class="header">
+                <h1 class="header-title">My Categories</h1>
+                <form class="sidebar-form" data-new-category-form>
+                    <div class="form-control">
+                        <input type="text" placeholder="Ente Category" data-new-category-input>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-plus" aria-hidden="true"></i>Add Category
+                    </button>
+                </form>
+            </header>
+            <ul class="sidebar-list" data-categories>
+                <li class="sidebar-item">All Categories</li>
+                <li class="sidebar-item">Work <input type="color" class="sidebar-color"></li>
+                <li class="sidebar-item">School <input type="color" class="sidebar-color"></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div>
+                    <h1 class="header-title">Welcome Back, <strong>Negm</strong> </h1>
+                    <div class="currently-viewing" data-currently-viewing>You are cuurently viewing all categories</div>
+                </div>
+                <!-- New task form -->
+                <form class="create-todo-form" data-new-todo-form>
+                    <div class="form-control">
+                        <select data-new-todo-select required>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-new-todo-input placeholder="Enter Todo" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-plus" aria-hiden="true"></i>Add Todo
+                    </button>
+                </form>
+<!-- Edit Form -->
+                <form class="edit-todo-form" data-edit-todo-form>
+                    <div class="form-control">
+                        <select data-edit-todo-select required>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-new-todo-input placeholder="Enter Todo" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-plus" aria-hiden="true"></i>Save
+                    </button>
+                </form>
+            </header>
+            <section class="todos-container" data-cards>
+                <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todo" style="border-color:black">
+                <div class="todo-tag" style="background-color: rgba(0 ,0 ,0 , 0.5); color:black;">
+                    Work
+                </div>
+                <p class="todo-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odio maxime, fuga optio pariatur ratione ad incidunt ipsum quos vel blanditiis quisquam quasi, doloremque, est libero non facere numquam dolorem.
+                </p>
+                <div class="todo-actions">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+            
+            
+            
+            </section>
+        </main>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
